@@ -3,9 +3,8 @@ framework:
     type: generic
     runtime: php
 hooks:
-    pre-staging:
-    - ./builder
     post-staging:
+    - ./builder
     - ./rethinkdb create --directory $STACKATO_FILESYSTEM/data
 services:
     driver: harbor
