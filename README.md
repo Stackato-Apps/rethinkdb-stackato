@@ -13,7 +13,6 @@ The following does not work:
 * Scaling to multiple nodes
 * Authentication (anyone who knows the URL can access the server)
 * Automatically printing port information
-* Proper logging integration
 
 ## Usage ##
 
