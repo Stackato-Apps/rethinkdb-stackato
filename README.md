@@ -18,7 +18,7 @@ The following does not work:
 ## Usage ##
 
 ```
-git clone git://github.com/bacongobbler/rethinkdb-stackato.git
+git clone git://github.com/Stackato-Apps/rethinkdb-stackato.git
 cd rethinkdb-stackato
 stackato push -n
 ```
