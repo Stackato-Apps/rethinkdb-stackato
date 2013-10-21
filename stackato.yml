@@ -1,0 +1,15 @@
+name: rethinkdb
+framework:
+    type: generic
+    runtime: php
+hooks:
+    pre-staging:
+    - ./builder
+    post-staging:
+    - ./rethinkdb create --directory $STACKATO_FILESYSTEM/data
+services:
+    driver: harbor
+    intracluster: harbor
+    ${name}-data: filesystem
+processes:
+    web: ./rethinkdb --bind 0.0.0.0 --cluster-port $STACKATO_HARBOR_INTRACLUSTER --driver-port $STACKATO_HARBOR_DRIVER --http-port $PORT --web-static-directory web --directory $STACKATO_FILESYSTEM/data
