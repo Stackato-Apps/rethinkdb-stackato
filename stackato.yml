@@ -1,4 +1,4 @@
-name: rethinkdb
+name: rethinkdb-stackato
 framework:
     type: generic
     runtime: php
