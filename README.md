@@ -28,8 +28,8 @@ If you'd like to get the host and ports for the client drivers, try
 the following:
 
 ```
-stackato run rethinkdb "echo $STACKATO_HARBOR_DRIVER"
-stackato run rethinkdb "echo $STACKATO_HARBOR_INTRACLUSTER"
+stackato run 'echo $STACKATO_HARBOR_DRIVER'
+stackato run 'echo $STACKATO_HARBOR_INTRACLUSTER'
 ```
 
 ## Using it in your app ##
